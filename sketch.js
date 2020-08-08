@@ -4,7 +4,7 @@ const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
-
+var box1,box2,box3;
 function preload()
 {
 	helicopterIMG=loadImage("helicopter.png")
@@ -33,7 +33,8 @@ function setup() {
 
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.5, isStatic:true, scale:0.5});
 	World.add(world, packageBody);
-	
+	box1 = Bodies.rectangle(2,620,5,)	
+
 
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
